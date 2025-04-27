@@ -2,7 +2,7 @@
 
 A machine learning-based lie detection system that analyzes facial micro-expressions, voice patterns, and subtle body language cues to detect deception.
 
-![Lie Detection System](https://via.placeholder.com/1200x400?text=Lie+Detection+System)
+
 
 ## Features
 
