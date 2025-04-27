@@ -1,0 +1,132 @@
+# Lie Detection System
+
+A fully functional, production-ready web application for detecting deception in videos using machine learning.
+
+## Overview
+
+This system analyzes uploaded videos to determine if the subject is telling the truth or lying. It uses a combination of facial expression analysis, voice pattern recognition, and micro-gesture detection to make predictions with high accuracy.
+
+## Features
+
+- Video upload and processing
+- Deep learning-based lie detection
+- Multi-modal analysis (visual, audio, behavioral)
+- Detailed confidence metrics
+- Responsive, modern UI
+- Secure processing with privacy focus
+
+## Project Structure
+
+```
+lie-detection-system/
+├── app/                     # Next.js app router
+│   ├── page.tsx             # Main page component
+│   ├── globals.css          # Global styles
+│   └── layout.tsx           # Root layout
+├── components/              # React components
+│   ├── upload.tsx           # Video upload component
+│   ├── result-display.tsx   # Results display component
+│   ├── features.tsx         # Features section component
+│   ├── how-it-works.tsx     # How it works section component
+│   └── api-status.tsx       # API status indicator component
+├── lib/                     # Utility functions
+│   └── api.ts               # API client for backend communication
+├── backend/                 # Python FastAPI backend
+│   ├── app.py               # Main application entry point
+│   ├── video_processor.py   # Video processing module
+│   ├── model_trainer.py     # ML model training pipeline
+│   ├── predictor.py         # Prediction service
+│   ├── config/              # Configuration files
+│   │   ├── Dockerfile       # Docker configuration
+│   │   └── requirements.txt # Python dependencies
+│   ├── models/              # Saved ML models
+│   ├── uploads/             # Temporary storage for uploaded videos
+│   └── processed/           # Processed video data
+└── start-app.bat            # Batch script to run the app
+```
+
+## Technologies Used
+
+### Frontend
+- Next.js with React 19
+- Tailwind CSS with shadcn/ui components
+- TypeScript
+
+### Backend
+- FastAPI (Python)
+- PyTorch for deep learning
+- OpenCV for video processing
+- Docker for containerization
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+ and pnpm
+- Python 3.9+
+- Docker (for production deployment)
+
+### Running Locally
+
+1. **Install frontend dependencies**
+   ```bash
+   pnpm install
+   ```
+
+2. **Install backend dependencies**
+   ```bash
+   cd backend
+   pip install -r config/requirements.txt
+   ```
+
+3. **Run the application**
+   
+   For Windows users, the easiest way is to use the provided script:
+   ```bash
+   start-app.bat
+   ```
+   
+   This will start both the frontend and backend services.
+   
+   Alternatively, you can start them separately:
+   
+   **Backend:**
+   ```bash
+   cd backend
+   python -m uvicorn app:app --reload --port 8000
+   ```
+   
+   **Frontend:**
+   ```bash
+   pnpm dev
+   ```
+   
+4. **Open in browser**
+   
+   Navigate to http://localhost:3000
+
+### Docker Deployment
+
+For production deployment, you can use Docker to containerize both frontend and backend:
+
+1. **Build the backend Docker image**
+   ```bash
+   cd backend
+   docker build -t lie-detection-backend -f config/Dockerfile .
+   ```
+
+2. **Run the backend container**
+   ```bash
+   docker run -p 8000:8000 lie-detection-backend
+   ```
+
+3. **Build and run the frontend (requires a separate Dockerfile)**
+
+## API Endpoints
+
+- `GET /`: Health check endpoint
+- `POST /upload`: Upload a video for lie detection analysis
+- `GET /model/status`: Get model info and training status
+
+## License
+
+[MIT License](LICENSE)
