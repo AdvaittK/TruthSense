@@ -1,0 +1,54 @@
+{
+  "0b3a58db666cd4c47d7ed04a6b6ac296599702d42e8f49771ca58b021d2899b5": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 82.89171064350784,
+      "features": {
+        "facialExpressions": 85.30263599875528,
+        "voiceAnalysis": 76.47573620819901,
+        "microGestures": 80.62925876770711
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-03T15:30:00.138000"
+  },
+  "5fa3cfcd9391fb621d4364b35d63924c4663098d51330a8154f739790c06cc0d": {
+    "result": {
+      "prediction": "Fake",
+      "confidence": 85.13742951377884,
+      "features": {
+        "facialExpressions": 67.16562639939413,
+        "voiceAnalysis": 60.688012667273014,
+        "microGestures": 83.21495327046381
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-03T15:30:07.726100"
+  },
+  "046f0f55531d3bfdc1efc9b64878c7ba54922b5130e7542ae8aa1679afc3a99b": {
+    "result": {
+      "prediction": "Fake",
+      "confidence": 93.14194058443414,
+      "features": {
+        "facialExpressions": 76.88599851343463,
+        "voiceAnalysis": 60.75443973688604,
+        "microGestures": 80.00490024283742
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-03T18:53:12.934693"
+  },
+  "5da397c14be6fab63772d79da5b5b646b52b7add031ebd0604b2707584fba01d": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 75.03341018852657,
+      "features": {
+        "facialExpressions": 89.5498675423662,
+        "voiceAnalysis": 77.74310769503921,
+        "microGestures": 88.3961454390829
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-03T18:53:45.996094"
+  }
+}

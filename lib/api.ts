@@ -76,18 +76,30 @@ export async function getModelStatus(): Promise<{
 export async function checkApiAvailability(): Promise<boolean> {
   try {
     console.log('Checking API availability at:', API_BASE_URL);
-    const response = await fetch(`${API_BASE_URL}/`, {
-      method: 'GET',
-      headers: { 'Accept': 'application/json' },
-      // Add caching and timeout options for more reliable checking
-      cache: 'no-cache',
-      signal: AbortSignal.timeout(5000) // 5 second timeout
-    });
-    const result = response.ok;
-    console.log('API availability check result:', result);
-    return result;
+    
+    try {
+      // Simple fetch with a short timeout to check if API is available
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout
+      
+      const response = await fetch(`${API_BASE_URL}/`, {
+        method: 'GET',
+        headers: { 'Accept': 'application/json' },
+        cache: 'no-cache',
+        signal: controller.signal
+      });
+      
+      clearTimeout(timeoutId);
+      const result = response.ok;
+      console.log('API availability check result:', result);
+      return result;
+    } catch (fetchError) {
+      console.log('Fetch error during API check:', fetchError);
+      // Return false on any fetch error - network issues, timeout, etc.
+      return false;
+    }
   } catch (error) {
-    console.error('API availability check failed:', error);
+    console.error('API availability check failed with unexpected error:', error);
     return false;
   }
 }

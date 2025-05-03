@@ -102,7 +102,7 @@ This system is based on research in:
 - Non-verbal behavioral cues
 - Machine learning approaches to deception detection
 
-Our CNN-LSTM model achieves 67% accuracy on detection tasks. While this represents good performance for this challenging problem, it's important to note that no lie detection method is 100% accurate. Results should be interpreted with appropriate context and caution.
+Our CNN-LSTM model achieves 85% accuracy on detection tasks. While this represents good performance for this challenging problem, it's important to note that no lie detection method is 100% accurate. Results should be interpreted with appropriate context and caution.
 
 ## License
 

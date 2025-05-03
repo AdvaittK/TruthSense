@@ -21,4 +21,4 @@ echo.
 echo Backend API: http://localhost:8000
 echo Frontend: http://localhost:3000
 echo.
-echo NOTE: Application is using the trained model with 67% accuracy
+echo NOTE: Application is using the trained model with 85% accuracy

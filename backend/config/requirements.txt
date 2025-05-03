@@ -6,6 +6,7 @@ numpy==1.24.2
 opencv-python==4.7.0.72
 torch==2.0.0
 torchvision==0.15.1
+torchaudio
 scikit-learn==1.2.2
 tqdm==4.65.0
 librosa==0.10.0
