@@ -601,7 +601,7 @@ export function Upload() {
                   transition={{ delay: 0.4 }}
                 >
                   <Badge variant="outline" className="px-3 py-1 text-xs bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200 text-blue-800 shadow-sm dark:from-blue-900/20 dark:to-purple-900/20 dark:border-blue-800/40 dark:text-blue-300">
-                    <span>Last updated: {new Date().toLocaleTimeString()}</span>
+                    <span>Last updated: {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true })}</span>
                   </Badge>
                 </motion.div>
               </div>

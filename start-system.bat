@@ -23,7 +23,7 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo Starting backend server...
-start cmd /k "cd backend && python simple_app.py "
+start cmd /k "cd backend && python simple_app.py"
 
 echo Waiting for backend to initialize...
 timeout /t 5 /nobreak > nul

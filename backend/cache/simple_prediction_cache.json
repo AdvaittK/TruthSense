@@ -50,5 +50,96 @@
       "using_dataset": true
     },
     "timestamp": "2025-05-03T18:53:45.996094"
+  },
+  "15567e691b958efc406f2a366f1ea07a432007c263781f4bb43e54b2192431d8": {
+    "result": {
+      "prediction": "Fake",
+      "confidence": 78.42201445323528,
+      "features": {
+        "facialExpressions": 82.74891379133625,
+        "voiceAnalysis": 73.96783905108451,
+        "microGestures": 72.04599241957634
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T10:35:03.540867"
+  },
+  "bd97f662ec79c942ff483bbf738b4eff91b1ab28db893c1e2b9a8221eca458d0": {
+    "result": {
+      "prediction": "Fake",
+      "confidence": 74.4667083218177,
+      "features": {
+        "facialExpressions": 86.5979746201816,
+        "voiceAnalysis": 87.9552250343656,
+        "microGestures": 74.18994155069737
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T10:36:45.486391"
+  },
+  "187a78a720afcc3d169573ba548133c49d5489280bd801453262e0fc9388d747": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 93.72001318136195,
+      "features": {
+        "facialExpressions": 78.54019884340046,
+        "voiceAnalysis": 68.39117938628559,
+        "microGestures": 84.36819697449644
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T10:37:41.014774"
+  },
+  "9e3fb9cfa1552737cfbaeb181ff8909b2e02453c9d85ad7696a2e1a70e73e400": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 72.33410030342247,
+      "features": {
+        "facialExpressions": 69.39256094969056,
+        "voiceAnalysis": 68.9701665787273,
+        "microGestures": 85.78290143341901
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T11:08:40.254184"
+  },
+  "6799b199d2e13e4bc990541f94fc90dfcbbcd80999814b9a2d70a43aa188befa": {
+    "result": {
+      "prediction": "Fake",
+      "confidence": 73.76077270165148,
+      "features": {
+        "facialExpressions": 78.24122805884952,
+        "voiceAnalysis": 86.62130666214279,
+        "microGestures": 89.4810485721263
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T11:12:14.170109"
+  },
+  "ee88adfbc9d75fd49b4e3421a7ef368e938075025fd8157bdd942cf96bef007d": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 77.22879254950108,
+      "features": {
+        "facialExpressions": 71.44527962567754,
+        "voiceAnalysis": 63.155363699749934,
+        "microGestures": 79.91479792703949
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T11:14:12.663474"
+  },
+  "27c30de23d825af090d402c89ac578d48fdeecf34f98751df6dfb1bec3c1f913": {
+    "result": {
+      "prediction": "Truth",
+      "confidence": 75.31506111218567,
+      "features": {
+        "facialExpressions": 74.74295150270902,
+        "voiceAnalysis": 81.80780406700877,
+        "microGestures": 81.98322045910899
+      },
+      "using_dataset": true
+    },
+    "timestamp": "2025-05-05T12:43:50.880400"
   }
 }
